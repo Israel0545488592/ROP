@@ -1,4 +1,5 @@
 '''
+
 safe_call takes a function and key-word arguments for it
 and if the format mathces it invokes it with the input
 else it raises an approporiate error
@@ -68,6 +69,7 @@ if __name__ == "__main__":
     import doctest
 
     def func1(a: int, b: int, c: str) -> float: print(c * (a + b))
+    # untyped argument
     def func2(x: int, y): return x
 
     doctest.testmod(verbose = True)

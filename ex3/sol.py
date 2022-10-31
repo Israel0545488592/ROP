@@ -3,6 +3,7 @@ from typing import Iterable
 
 def print_sorted(cont: Iterable):
 
+    # customised comperssion
     def hyrarcy(x):
         return ceil(x) if type(x) in [int, float] else len(str(x))
 
@@ -14,7 +15,7 @@ def print_sorted(cont: Iterable):
         for i in range(len(keys)):
 
             print(keys[i], ' :', end = ' ')
-            print_sorted(cont[keys[i]])
+            print_sorted(cont[keys[i]])         # recursion
             if i != len(keys) -1:
                 print(',', end = ' ')
 

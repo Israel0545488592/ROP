@@ -2,11 +2,12 @@
 
 BFS is a general implementation of 
 Bredth First Search on a multi dimentional lattice
-it takes to nodes of the same type (src and dst)
-and a truvarsion function that defines the lattice topolay
+it takes 2 nodes of the same type (src and dst)
+and a 'traveling' function that defines the lattice topolay
 
 Note!!: a limitation of this implementation is that str(node) must be injective
 because of hashing
+
 '''
 
 def test1():
